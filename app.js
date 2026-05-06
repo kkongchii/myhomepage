@@ -50,11 +50,9 @@ const RANGE_TOTAL = RANGE_END - RANGE_START;
 document.querySelectorAll('.year-bar').forEach(bar => {
   const start = parseInt(bar.dataset.start);
   const end = parseInt(bar.dataset.end);
-  const left = ((start - RANGE_START) / RANGE_TOTAL) * 100;
-  const width = ((end - start) / RANGE_TOTAL) * 100;
-  bar.style.marginLeft = `${left}%`;
-  bar.style.width = '0%';
-  bar._targetWidth = `${width}%`;
+  const height = ((end - start) / RANGE_TOTAL) * 100;
+  bar.style.height = '0%';
+  bar._targetHeight = `${height}%`;
 });
 
 /* ===== 스크롤 페이드인 ===== */
@@ -67,7 +65,7 @@ const observer = new IntersectionObserver(
       e.target.classList.add('visible');
       // 연도 바 애니메이션
       e.target.querySelectorAll('.year-bar').forEach(bar => {
-        bar.style.width = bar._targetWidth;
+        bar.style.height = bar._targetHeight;
       });
       observer.unobserve(e.target);
     }
