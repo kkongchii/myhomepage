@@ -368,6 +368,27 @@ section {
   color: var(--accent);
 }
 
+/* ===== 연도 바 ===== */
+.year-bar-wrap {
+  background: var(--border);
+  border-radius: 4px;
+  height: 6px;
+  margin: 12px 0;
+  overflow: hidden;
+}
+
+.year-bar {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  width: 0;
+  transition: width 1s ease;
+}
+
+.year-bar--edu {
+  background: linear-gradient(90deg, #6ecf9e, #a0d8b3);
+}
+
 /* ===== 프로젝트 ===== */
 #projects { background: var(--bg2); }
 

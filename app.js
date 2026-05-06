@@ -42,6 +42,21 @@ const onScroll = () => {
 
 window.addEventListener('scroll', onScroll, { passive: true });
 
+/* ===== 연도 바 ===== */
+const RANGE_START = 2017;
+const RANGE_END = 2026;
+const RANGE_TOTAL = RANGE_END - RANGE_START;
+
+document.querySelectorAll('.year-bar').forEach(bar => {
+  const start = parseInt(bar.dataset.start);
+  const end = parseInt(bar.dataset.end);
+  const left = ((start - RANGE_START) / RANGE_TOTAL) * 100;
+  const width = ((end - start) / RANGE_TOTAL) * 100;
+  bar.style.marginLeft = `${left}%`;
+  bar.style.width = '0%';
+  bar._targetWidth = `${width}%`;
+});
+
 /* ===== 스크롤 페이드인 ===== */
 document.querySelectorAll('.skill-group, .timeline-item, .project-card, .contact-item')
   .forEach(el => el.classList.add('fade-in'));
@@ -50,6 +65,10 @@ const observer = new IntersectionObserver(
   entries => entries.forEach(e => {
     if (e.isIntersecting) {
       e.target.classList.add('visible');
+      // 연도 바 애니메이션
+      e.target.querySelectorAll('.year-bar').forEach(bar => {
+        bar.style.width = bar._targetWidth;
+      });
       observer.unobserve(e.target);
     }
   }),
