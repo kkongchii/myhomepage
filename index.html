@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kkongchii | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 네비게이션 -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">kkongchii</span>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">홈</a></li>
+        <li><a href="#skills">기술 스택</a></li>
+        <li><a href="#experience">경력</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="테마 전환">🌙</button>
+    </div>
+  </nav>
+
+  <!-- 히어로 -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="hero-greeting">안녕하세요,</p>
+      <h1 class="hero-name">kkongchii<span class="accent">.</span></h1>
+      <p class="hero-title">백엔드 개발자 &amp; 데이터 엔지니어</p>
+      <p class="hero-desc">
+        보험 도메인에서 AI 모델 서빙 플랫폼을 운영하고,<br />
+        데이터 파이프라인과 데이터마트를 설계·관리합니다.
+      </p>
+      <div class="hero-links">
+        <a href="https://github.com/kkongchii" target="_blank" class="btn btn-primary">GitHub</a>
+        <a href="https://velog.io/@kkongchi" target="_blank" class="btn btn-outline">Blog</a>
+        <a href="mailto:smallbean99s@gmail.com" class="btn btn-outline">Email</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>&#8595;</span>
+    </div>
+  </section>
+
+  <!-- 기술 스택 -->
+  <section id="skills">
+    <div class="section-inner">
+      <h2 class="section-title">기술 스택</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>언어</h3>
+          <ul>
+            <li><span class="badge">Java</span></li>
+            <li><span class="badge">Python</span></li>
+            <li><span class="badge">JavaScript</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>백엔드</h3>
+          <ul>
+            <li><span class="badge">Spring Boot</span></li>
+            <li><span class="badge">Django</span></li>
+            <li><span class="badge">Node.js</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>프론트엔드</h3>
+          <ul>
+            <li><span class="badge">React</span></li>
+            <li><span class="badge">Recoil</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>데이터 엔지니어링</h3>
+          <ul>
+            <li><span class="badge">데이터 파이프라인</span></li>
+            <li><span class="badge">데이터마트</span></li>
+            <li><span class="badge">BI 대시보드</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>AI / ML</h3>
+          <ul>
+            <li><span class="badge">AI 모델 서빙</span></li>
+            <li><span class="badge">MLOps</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>데이터베이스 &amp; 도구</h3>
+          <ul>
+            <li><span class="badge">MySQL</span></li>
+            <li><span class="badge">DB2</span></li>
+            <li><span class="badge">Oracle</span></li>
+            <li><span class="badge">Git</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 경력 -->
+  <section id="experience">
+    <div class="section-inner">
+      <h2 class="section-title">경력</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>현대HDS</h3>
+              <span class="timeline-period">~ 현재</span>
+            </div>
+            <p class="timeline-role">백엔드 개발자 &amp; 데이터 엔지니어</p>
+            <ul class="timeline-tasks">
+              <li>보험사 AI 모델 서빙 플랫폼(AI 포탈) 운영</li>
+              <li>데이터 파이프라인 구축 및 관리</li>
+              <li>데이터마트 설계 및 운영</li>
+              <li>BI 보고서 작성 및 대시보드 관리</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot--edu"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>홍익대학교</h3>
+              <span class="timeline-period">졸업</span>
+            </div>
+            <p class="timeline-role">컴퓨터공학 (또는 관련 전공)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 프로젝트 -->
+  <section id="projects">
+    <div class="section-inner">
+      <h2 class="section-title">프로젝트</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <h3>AI 모델 서빙 플랫폼</h3>
+            <span class="project-badge project-badge--work">현업</span>
+          </div>
+          <p class="project-desc">
+            보험사에서 활용하는 AI 모델을 서빙하는 플랫폼 운영.<br />
+            모델 배포·모니터링·API 제공 등 AI 포탈 전반을 담당.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Java</span>
+            <span class="tag">AI 서빙</span>
+          </div>
+          <p class="project-private">🔒 사내 프로젝트</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <h3>데이터 파이프라인 &amp; 데이터마트</h3>
+            <span class="project-badge project-badge--work">현업</span>
+          </div>
+          <p class="project-desc">
+            보험 도메인 데이터의 수집·가공·적재 파이프라인 구축 및<br />
+            데이터마트 설계·운영. BI 보고서 연동.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">BI</span>
+          </div>
+          <p class="project-private">🔒 사내 프로젝트</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <h3>AI-KIOSK-Spring</h3>
+            <span class="project-badge project-badge--personal">개인</span>
+          </div>
+          <p class="project-desc">
+            Spring Boot 기반 AI 키오스크 백엔드 프로젝트.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+          </div>
+          <a href="https://github.com/AI-KIOSK/AI-KIOSK-Spring" target="_blank" class="project-link">GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <h3>서울 이야기 (front-react)</h3>
+            <span class="project-badge project-badge--personal">개인</span>
+          </div>
+          <p class="project-desc">
+            React 기반 서울 이야기 프론트엔드 프로젝트.
+          </p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+          </div>
+          <a href="https://github.com/Story-of-Seoul/front-react" target="_blank" class="project-link">GitHub →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 연락처 -->
+  <section id="contact">
+    <div class="section-inner">
+      <h2 class="section-title">연락처</h2>
+      <p class="contact-desc">편하게 연락 주세요.</p>
+      <div class="contact-links">
+        <a href="mailto:smallbean99s@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          <span>smallbean99s@gmail.com</span>
+        </a>
+        <a href="https://github.com/kkongchii" target="_blank" class="contact-item">
+          <span class="contact-icon">&#xf09b;</span>
+          <span>github.com/kkongchii</span>
+        </a>
+        <a href="https://velog.io/@kkongchi" target="_blank" class="contact-item">
+          <span class="contact-icon">✍</span>
+          <span>velog.io/@kkongchi</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 kkongchii. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
